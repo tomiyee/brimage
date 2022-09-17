@@ -14,6 +14,6 @@ This project was initially inspired by [this blog](https://blog.codemagic.io/how
 
 This project is built using React Native, a platform that allows developers to use React syntax to develop web applications, android applications, and ios applications. 
 
-To include Material UI components, React Native applications use the `react-native-paper` library.
+To include Material Design UI in React Native, https://www.react-native-material.com/docs/getting-started
 
 Finally, it's usually recommended that you include vector icons. 
