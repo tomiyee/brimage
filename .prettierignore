@@ -1,0 +1,21 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+
+# Prettier Ignore Artifacts
+babel.config.js
+README.md
+package-lock.json
+package.json
+.prettierrc.json

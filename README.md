@@ -1,7 +1,6 @@
 # Best Random Image (Brimage) Platform!
 
-The goal of this platform is to provide a way to view posts that you enjoy randomly. The randomness can then be customized to be uniform or weighted by some property, such as the number of times you have liked the platforms. 
-
+The goal of this platform is to provide a way to view posts that you enjoy randomly. The randomness can then be customized to be uniform or weighted by some property, such as the number of times you have liked the platforms.
 
 ## Notes to Self
 
@@ -12,8 +11,8 @@ Names for the React Native Paper library come from the material design icon name
 
 This project was initially inspired by [this blog](https://blog.codemagic.io/how-to-build-react-native-ui-app-with-material-ui/).
 
-This project is built using React Native, a platform that allows developers to use React syntax to develop web applications, android applications, and ios applications. 
+This project is built using React Native, a platform that allows developers to use React syntax to develop web applications, android applications, and ios applications.
 
 To include Material Design UI in React Native, https://www.react-native-material.com/docs/getting-started
 
-Finally, it's usually recommended that you include vector icons. 
+Finally, it's usually recommended that you include vector icons.
