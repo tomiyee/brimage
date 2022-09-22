@@ -14,11 +14,18 @@
     "expo": "~46.0.9",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
-    "react-native": "0.69.5"
+    "react-native": "0.69.5",
+    "react-native-fast-image": "^8.6.1",
+    "react-router-native": "^6.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "prettier": "2.7.1"
+    "@types/jest": "^29.0.3",
+    "@types/react": "^18.0.20",
+    "@types/react-native": "^0.70.2",
+    "@types/react-test-renderer": "^18.0.0",
+    "prettier": "2.7.1",
+    "typescript": "^4.8.3"
   },
   "private": true
 }

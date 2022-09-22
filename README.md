@@ -15,4 +15,7 @@ This project is built using React Native, a platform that allows developers to u
 
 To include Material Design UI in React Native, https://www.react-native-material.com/docs/getting-started
 
+`react-native-fast-image` is for lazy loading images.
+
+
 Finally, it's usually recommended that you include vector icons.
