@@ -1,0 +1,109 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "react-app",
+    "react-app/jest"
+  ],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "no-promise-executor-return": "error",
+    "prefer-exponentiation-operator": "error",
+    "no-negated-condition": "error",
+    "no-bitwise": "error",
+    "camelcase": ["error", {
+      "ignoreImports": true
+    }],
+    "require-await": "error",
+    "eqeqeq": "error",
+    "no-console": "warn",
+    "@typescript-eslint/no-shadow": ["error", {"allow": ["_"]}],
+    "no-param-reassign": "error",
+    "radix": "error",
+    "consistent-return": "error",
+    "no-throw-literal": "error",
+    "prefer-destructuring": "error",
+    "no-else-return": "error",
+    "max-classes-per-file": "error",
+    "prefer-object-spread": "error",
+    "no-duplicate-imports": "error",
+    "prefer-promise-reject-errors": "error",
+    "object-shorthand": "error",
+    "dot-notation": "error",
+    "no-return-await": "error",
+    "no-with": "error",
+    "no-unneeded-ternary": "error",
+    "no-useless-concat": "error",
+    "no-sequences": "error",
+    "yoda": "error",
+    "react/self-closing-comp": "error",
+
+    // One day turn on: we want but I don't want to do the work right now
+    "func-style": "off", // we probably want to turn this on or standardize, not sure about allowing arrow functions, I would vote for declarations
+    "guard-for-in": "off", // dont fully understand the scope of this, but we probably want it
+    "react/jsx-pascal-case": "off", // probably right but I don't want to deal with it
+    "sort-imports": "off", // feels like we want this, but rule seems to be inconsistent and doesnt auto-fix as much as I want
+    "class-methods-use-this": "off", // essentially banning static methods, we should do this
+    "no-var": "off",
+    
+    // Other rules we may consider: these are the non-style rules we trigger when running with "eslint:all"
+    "init-declarations": "off", // Keep off, not necessary IMO
+    "no-use-before-define": "off", // TODO: think about turning on one day
+    "one-var": "off", // I don't think worth imposing a standard here
+    "no-magic-numbers": "off", // seems annoying
+    "id-length": "off", // seems annoying
+    "curly": "off", // probably should pick a standard here
+    "sort-keys": "off", // this is annoying in lots of cases where you want to impose a more sensible order
+    "max-statements": "off", // I don't believe in this
+    "no-undefined": "off", // typescript is smart enough, but we should just not redefine undefined
+    "max-lines": "off", // no way
+    "max-lines-per-function": "off", // ditto
+    "no-inline-comments": "off", // I like these
+    "no-warning-comments": "off", // we could set to warn so that we see these, but we error on any warning
+    "no-ternary": "off", // ternary is the bomb,
+    "max-params": "off",
+    "no-nested-ternary": "off", // can be useful
+    "no-underscore-dangle": "off", // has meaning
+    "new-cap": "off", // a little too opinionated
+    "no-plusplus": "off", // this is annoying on for loops, but maybe there is a good fix
+    "no-await-in-loop": "off", // i don't think this actually makes any sense
+
+    // Style rules we definitely want off as we use prettier
+    "indent": "off",
+    "padded-blocks": "off",
+    "function-paren-newline": "off",
+    "array-element-newline": "off",
+    "arrow-body-style": "off",
+    "nonblock-statement-body-position": "off",
+    "comma-dangle": "off",
+    "dot-location": "off",
+    "no-mixed-operators": "off",
+    "function-call-argument-newline": "off",
+    "newline-per-chained-call": "off",
+    "object-curly-spacing": "off",
+    "object-property-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "line-comment-position": "off",
+    "multiline-ternary": "off",
+    "max-len": "off",
+    "no-extra-parens": "off",
+    "space-before-function-paren": "off",
+    "spaced-comment": "off",
+    "lines-between-class-members": "off",
+    "quotes": "off",
+    "multiline-comment-style": "off",
+    "lines-around-comment": "off",
+    "brace-style": "off",
+    "no-shadow": "off", // https://github.com/typescript-eslint/typescript-eslint/issues/2483
+    "quote-props": "off",
+
+    // react-rules
+    "react/prop-types": "off" // a desired rule, but many false positives.  Typescript might also ensure this
+  }
+}

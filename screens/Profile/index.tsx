@@ -10,7 +10,7 @@ type ProfileProps = NativeStackScreenProps<RootStackParamList, Screen.PROFILE>;
  * The Screen to handle profiles and junk.
  */
 const ProfileScreen: React.FC<ProfileProps> = () => {
-  return <View></View>;
+  return <View />;
 };
 
 export default ProfileScreen;

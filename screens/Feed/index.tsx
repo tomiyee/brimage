@@ -10,7 +10,7 @@ type FeedProps = NativeStackScreenProps<RootStackParamList, Screen.FEED>;
  * The Screen with the Random Image Feed.
  */
 const FeedScreen: React.FC<FeedProps> = () => {
-  return <View></View>;
+  return <View />;
 };
 
 export default FeedScreen;
