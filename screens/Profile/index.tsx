@@ -4,13 +4,13 @@ import { View } from 'react-native';
 import { Screen } from '../../consts';
 import RootStackParamList from '../RootStackParamList';
 
-type FeedProps = NativeStackScreenProps<RootStackParamList, Screen.FEED>;
+type ProfileProps = NativeStackScreenProps<RootStackParamList, Screen.PROFILE>;
 
 /**
- * The Screen with the Random Image Feed.
+ * The Screen to handle profiles and junk.
  */
-const FeedScreen: React.FC<FeedProps> = () => {
+const ProfileScreen: React.FC<ProfileProps> = () => {
   return <View></View>;
 };
 
-export default FeedScreen;
+export default ProfileScreen;
