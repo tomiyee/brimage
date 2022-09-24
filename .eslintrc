@@ -13,17 +13,26 @@
   ],
   "rules": {
     "@typescript-eslint/ban-ts-comment": "off",
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
+      }
+    ],
     "no-promise-executor-return": "error",
     "prefer-exponentiation-operator": "error",
     "no-negated-condition": "error",
     "no-bitwise": "error",
-    "camelcase": ["error", {
-      "ignoreImports": true
-    }],
+    "camelcase": [
+      "error",
+      {
+        "ignoreImports": true
+      }
+    ],
     "require-await": "error",
     "eqeqeq": "error",
     "no-console": "warn",
-    "@typescript-eslint/no-shadow": ["error", {"allow": ["_"]}],
+    "@typescript-eslint/no-shadow": ["error", { "allow": ["_"] }],
     "no-param-reassign": "error",
     "radix": "error",
     "consistent-return": "error",
@@ -51,7 +60,7 @@
     "sort-imports": "off", // feels like we want this, but rule seems to be inconsistent and doesnt auto-fix as much as I want
     "class-methods-use-this": "off", // essentially banning static methods, we should do this
     "no-var": "off",
-    
+
     // Other rules we may consider: these are the non-style rules we trigger when running with "eslint:all"
     "init-declarations": "off", // Keep off, not necessary IMO
     "no-use-before-define": "off", // TODO: think about turning on one day

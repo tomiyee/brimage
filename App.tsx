@@ -8,33 +8,35 @@ import RootStackParamList from './screens/RootStackParamList';
 import FeedScreen from './screens/Feed';
 import HomeScreen from './screens/Home';
 import ProfileScreen from './screens/Profile';
+import { RecoilRoot } from 'recoil';
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <RootStack.Navigator>
-        <RootStack.Screen
-          name={Screen.HOME}
-          component={HomeScreen}
-          options={{ title: 'Welcome' }}
-        />
-        <RootStack.Screen
-          name={Screen.PROFILE}
-          component={ProfileScreen}
-          options={{ title: 'Profile' }}
-        />
-        <RootStack.Screen
-          name={Screen.FEED}
-          component={FeedScreen}
-          options={{ title: 'Feed' }}
-        />
-      </RootStack.Navigator>
-    </NavigationContainer>
+    <RecoilRoot>
+      <NavigationContainer>
+        <RootStack.Navigator>
+          <RootStack.Screen
+            name={Screen.HOME}
+            component={HomeScreen}
+            options={{ title: 'Welcome' }}
+          />
+          <RootStack.Screen
+            name={Screen.PROFILE}
+            component={ProfileScreen}
+            options={{ title: 'Profile' }}
+          />
+          <RootStack.Screen
+            name={Screen.FEED}
+            component={FeedScreen}
+            options={{ title: 'Feed' }}
+          />
+        </RootStack.Navigator>
+      </NavigationContainer>
+    </RecoilRoot>
   );
 }
-
 
 /* 
 <AppBar
@@ -59,7 +61,6 @@ export default function App() {
   )}
 /> 
 */
-
 
 // const styles = StyleSheet.create({
 //   container: {

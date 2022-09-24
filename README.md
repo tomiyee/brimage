@@ -17,5 +17,6 @@ To include Material Design UI in React Native, https://www.react-native-material
 
 `react-native-fast-image` is for lazy loading images.
 
+https://reactnavigation.org/docs/getting-started/
 
 Finally, it's usually recommended that you include vector icons.
